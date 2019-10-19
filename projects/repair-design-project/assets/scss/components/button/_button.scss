@@ -1,0 +1,17 @@
+.button {
+  font-family: 'FuturaDemiC', $supportFont;
+  text-align: center;
+  text-transform: uppercase;
+  color: colorWhite;
+
+  background: $colorGold;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border: 0;
+  border-radius: 2px;
+  outline: none;
+
+  &:hover {
+    box-shadow: 0px 5px 15px $colorGold !important;
+    color: rgb(219, 31, 31) !important;
+  }
+}

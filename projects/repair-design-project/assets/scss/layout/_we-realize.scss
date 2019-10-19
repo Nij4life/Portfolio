@@ -1,0 +1,127 @@
+.we-realize {
+  display: flex;
+  max-height: 868px;
+  background: url("./assets/images/bg_block5.jpg") no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: 1200px){
+    display: block;
+    margin-top: -50px;
+    background: #ffffff;
+  }
+
+  &__left {
+    min-width: 370px;
+    margin: 137px 130px 75px 100px;
+
+    @media screen and (max-width: 1420px) {
+      margin-left: 20px;
+      margin-right: 20px;
+      min-width: 300px;
+    }
+
+    & h2 {
+      margin-bottom: 40px;
+      font-family: "Yeseva One", $supportFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.7em;
+      line-height: 37px;
+      text-transform: uppercase;
+      color: $colorGold;
+
+      @media screen and (max-width: 1200px) {
+       text-align: center;
+      }
+    }
+
+    & .we-realize-list {
+      padding: 0;
+      list-style: none;
+
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+
+      &__item,
+      &__item_active {
+        margin-bottom: 15px;
+
+        & a {
+          font-size: 20px;
+          line-height: 34px;
+          color: #ffffff;
+          text-decoration: none;
+
+          &:hover {
+            border-bottom: 2px solid $colorGold;
+            color: #f0da7a;
+          }
+        }
+      }
+
+      &__item_active a {
+        color: $colorGold;
+        border-bottom: 2px solid $colorGold;
+      }
+    }
+  }
+
+  &__right {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 80px;
+
+    & .we-realize__img {
+      position: relative;
+
+
+      &:first-of-type {
+        top: -30px;
+      }
+
+      &:nth-of-type(2) {
+       top: -100px;
+      }
+
+      &:nth-of-type(3) {
+        bottom: -20px;
+      }
+
+      &:last-of-type {
+        top: -340px;
+      }
+    }
+  }
+
+  & .we-realize__slider {
+    display: none;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 1200px) {
+    &  .we-realize__right {
+      display: none;
+    }
+
+    &  .we-realize__slider {
+      display: flex;
+      justify-content: center;
+
+
+      & .we-realize__img {
+        width: 80%;
+
+        @media screen and (max-width: 800px) {
+          width: 90%;
+        }
+
+        & img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

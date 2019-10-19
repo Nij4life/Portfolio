@@ -1,0 +1,59 @@
+.form {
+  &__input {
+    position: relative;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    line-height: 30px;
+
+    &::placeholder {
+      color: #363636;
+    }
+
+  }
+
+  &__label {
+    position: relative;
+  }
+
+  & .checkbox {
+    visibility: hidden;
+    position: absolute;
+
+
+    &:checked + label{
+      background: gray;
+      // background: url("/images/i.svg");    //  доделать галочку в чекбокс
+    }
+
+    &__label {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      background: $colorGold;
+
+      &:after {
+        position: relative;
+        left: 40px;
+        top: 3px;
+        width: 270px;
+        display: block;
+        content: "I agree to the processing of personal data";
+      }
+
+      // .types-repair & {
+      //   align-self: flex-start;
+      //   left: 0px;
+      //   margin-left: 50px;
+      //   color: #ffffff;
+      // }
+    }
+  }
+
+  & .form__button {
+    position: relative;
+    color: #ffffff;
+  }
+}
+
+

@@ -1,0 +1,165 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  border: 1px solid transparent;
+  overflow: hidden;
+
+  
+  .item-conteiner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  }
+
+  .item {
+    position: relative;
+    display: none;
+    margin: 0 auto;
+    animation: 0.5s ease-in-out;
+  }
+
+  .active,
+  .next {
+    display: block;
+  }
+
+  .next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .description {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20%;
+    font-size: 32px ;
+    border: 2px solid #000000;
+
+    &__text {
+      font-size: 1em;
+
+      & ol {
+        margin: 10px;
+
+        & li {
+          font-size: 0.7em;
+          text-align: left;
+        }
+      }      
+    }
+
+    &__show {
+      position: absolute;
+      top: 1%;
+      right: 1%;
+      display: none;
+      padding: 10px;
+
+      @media screen and (max-width: 640px) {
+        display: block;
+      }
+    }
+  }
+
+  .project-name {
+    padding: 10px;
+  }
+
+  .control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    cursor: pointer;
+  }
+
+  .control.left {
+    left: 0;
+    right: auto; 
+  }
+
+  .control.right {
+    right: 0;
+    left: auto;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    font-size: 84px;
+    transform: translateY(-50%);
+  }
+
+  .arrow.left {
+    left: 50%;
+  }
+
+  .arrow.right {
+    right: 50%;
+  }
+
+  .to-left {
+    animation-name: left;
+  }
+
+  .to-right {
+    animation-name: right;
+    animation-direction: reverse;
+  }
+
+  .from-left {
+    animation-name: left;
+    animation-direction: reverse;
+  }
+
+  .from-right {
+    animation-name: right;  
+  }
+
+  @keyframes left {
+    from {
+      left: 0;
+    }
+    to {
+      left: -100%;
+    }
+  }
+
+  @keyframes right {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .description {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .control {
+      display: none;
+    }
+
+    .description {
+      border: 0;
+
+      &__text {
+        display: none;
+      }
+    }
+  }
+}
+
+.visible {
+  display: block !important;
+}

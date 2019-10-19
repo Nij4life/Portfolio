@@ -1,0 +1,44 @@
+.panel {
+  margin: 30px;
+  border-bottom: 5px double #000000;
+}
+
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+
+}
+
+.panel-body {
+  border-top: 1px solid #000000;
+
+  &__text {
+    margin: 10px 20px;
+    font-size: 20px;
+  }
+
+  &__link {
+    font-weight: 900;
+    color: #000000;
+    text-decoration: none;
+
+    &:hover {
+    color: #c79546;
+    }
+  }
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background: transparent;
+    outline: none;
+    border: none;
+
+    &:hover {
+        color: #c79546;
+    }
+}

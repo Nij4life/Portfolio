@@ -1,0 +1,81 @@
+.design-project {
+  margin-top: 100px;
+
+  @media screen and (max-width: 880px){
+    background: #131313;
+    color: #ffffff;
+    margin-top: -250px;
+  }
+
+  & .section-header {
+    color: #181818;
+
+    @media screen and (max-width: 880px){
+      color: #ffffff;
+      padding-top: 270px;
+    }
+  }
+
+  & .section-header-img {
+    left: 49%;
+
+    &::before,
+    &::after {
+      top: 0;
+    }
+  }
+
+  &__text {
+    max-width: 760px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-family: "FuturaBookC", $supportFont;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+
+    @media screen and (max-width: 800px){
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+  }
+
+  & .card-list {
+    @media screen and (max-width: 880px){
+      flex-direction: column;
+      align-items: center;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  & .item {
+
+    @media screen and (max-width: 1252px){
+      &:last-child {
+        margin-top: 250px;
+      }
+    }
+
+    @media screen and (max-width: 880px){
+      margin-bottom: 150px;
+      &:last-child {
+        margin-top: 100px;
+      }
+    }
+
+    .item__button {
+      padding-right: 70px;
+      padding-left: 33px;;
+    }
+
+    &:first-child .item__button{
+      bottom: -110px;
+    }
+
+    &:last-child .item__button{
+      bottom: -335px;
+    }
+  }
+}

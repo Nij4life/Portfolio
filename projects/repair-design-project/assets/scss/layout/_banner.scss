@@ -1,0 +1,130 @@
+// Задать позиционирование правильному блоку
+.banner {
+  position: relative;
+  display: flex;
+  background: url('./assets/images/banner.jpg') no-repeat;
+  background-size: cover;
+
+  & .instagram {
+    min-width: 82px;
+    background: #131313;
+
+    &__inner{
+      position: relative;
+      top: 40%;
+      transform: rotate(90deg);
+      text-transform: uppercase;
+
+      &:hover a{
+        color: #ffffff;
+        box-shadow: 0 0 15px rgba(227, 184, 115);
+      }
+
+      &::after {
+        position: relative;
+        bottom: 10px;
+        left: 110px;
+        display: block;
+        width: 51px;
+        height: 1px;
+        content: "";
+        background: $colorGold;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $colorGold;
+    }
+
+    @media screen and (max-width: 800px){
+      display: none;
+    }
+  }
+
+  & .info {
+    justify-self: stretch;
+    margin: 205px 0 205px 60px;
+    color: $colorWhite;
+
+
+    &__header {
+      font-family: "Yeseva One", $supportFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2.2em;
+      line-height: 53px;
+      text-transform: uppercase;
+
+      & .info__city {
+        color: $colorGold;
+      }
+
+      @media screen and (max-width: 1000px){
+        font-size: 23px;
+      }
+    }
+
+    // Поменять названия запасных шрифтов на переменные!
+    &__text {
+      font-family: "FuturaBookC", $supportFont;
+      font-size: 1.1em;
+      line-height: 30px;
+    }
+
+    &__button {
+      font-size: 13px;
+      line-height: 15px;
+
+      &:first-of-type {
+        padding: 20px 41px;
+      }
+
+      &:last-of-type {
+        padding: 20px 22px;
+        margin-left: 20px;
+        background: transparent;
+        color: $colorWhite;
+        box-shadow: 0px 0px 4px 2px rgb(255, 255, 255, 0.9);
+      }
+
+      @media screen and (max-width: 600px){
+        margin: 13px 0 !important;
+        width: 90%;
+      }
+    }
+
+    @media screen and (max-width: 1000px){
+      margin: 10% 0 20% 5%;
+    }
+  }
+
+  & .button__scroll-down {
+    position: absolute;
+    bottom: -50px;
+    padding-top: 30px;
+    font-family: "Yeseva One", $supportFont;
+    font-size: 14px;
+    line-height: 19px;
+    background: #131313;
+    box-shadow: none;
+    text-align: center;
+
+    & .button__text {
+      margin: 40px 50px;
+      color: $colorWhite;
+
+      & .button__arrow {
+        margin-left: 15px;
+        padding: 5px 8px;
+        color: $colorGold;
+        border: 1px solid $colorGold;
+        border-radius: 50%;
+      }
+    }
+
+    @media screen and (max-width: 600px){
+      display: none;
+    }
+  }
+}

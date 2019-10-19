@@ -1,0 +1,165 @@
+.completed-projects {
+  margin-top: -20px;
+  background: #131313;
+  color: $colorWhite;
+  display: flex;
+
+  &__description {
+    margin: 175px 50px 0 100px;
+    font-size: 18px;
+    line-height: 29px;
+    flex-shrink: 1;
+    flex-basis: 570px;
+
+    & .description {
+      &__header {
+        font-size: 1.5em;
+        color: $colorGold;
+        text-transform: uppercase;
+
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 92px;
+          height: 3px;
+          margin: 0 30px;
+          border-top: 1px solid $colorGold;
+          border-bottom: 1px solid $colorGold;
+          }
+
+
+        @media screen and (max-width: 1000px){
+          text-align: center;
+
+          &::after {
+            display: none;
+          }
+          & br {
+            display: none;
+          }
+        }
+      }
+
+      @media screen and (max-width: 1000px){
+        flex-basis: content;
+        margin: 18px;
+      }
+    }
+
+
+    & .info {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 15px;
+      line-height: 20px;
+
+      &__item:nth-child(2n-1) {
+        flex-basis: 200px;
+
+        @media screen and (max-width: 500px){
+          flex-basis: 150px;
+        }
+      }
+
+      &__h3 {
+        line-height: 25px;
+        color: $colorGold;
+        text-transform: uppercase;
+      }
+    }
+
+    & .mobille-slider {
+      display: none;
+      width: 100%;
+
+      & img {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 1000px){
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 1000px){
+      margin: 40px auto;
+    }
+  }
+
+  &__visual {
+    overflow: hidden;
+    flex-shrink: 2;
+
+    & .navbar {
+      display: flex;
+      margin-top: 125px;
+      margin-bottom: 45px;
+      padding-left: 0;
+
+      font-family: "Yeseva One", $supportFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+
+      list-style: none;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &__item:not(:last-child) {
+        margin-right: 60px;
+      }
+
+      &__link{
+        color: rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+
+        &_active {
+          padding-bottom: 10px;
+          border-bottom: 1px solid $colorGold;
+          color: $colorGold;
+          text-decoration: none;
+
+          &:hover {
+            padding-bottom: 5px;
+            border-bottom: 2px solid $colorGold;
+            color: #e6dbab;
+          }
+        }
+
+        &:hover {
+          border-bottom: 2px solid $colorGold;
+          padding-bottom: 5px;
+        }
+      }
+    }
+
+    & .slider {
+      display: flex;
+      margin-bottom: 405px;
+
+      &__item {
+        margin-right: 20px;
+
+        &_last {
+          overflow: hidden;
+        }
+      }
+
+      &__link {
+        display: block;
+        height: 100%;
+      }
+
+      &__img_last {
+          position: relative;
+          left: -130px;
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+      display: none;
+    }
+  }
+
+}

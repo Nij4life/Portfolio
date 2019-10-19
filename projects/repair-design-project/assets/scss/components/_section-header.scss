@@ -1,0 +1,38 @@
+.section-header {
+  font-family: "Yeseva One", $supportFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &-img {
+    position: relative;
+    margin-bottom: 30px;
+
+    &::before {
+      position: absolute;
+      top: 15px;
+      left: -50px;
+      content: "";
+      display: block;
+      height: 2px;
+      width: 32px;
+      background: $colorGold;
+    }
+
+    &::after {
+      position: absolute;
+      top: 15px;
+      right: -50px;
+      content: "";
+      display: block;
+      height: 2px;
+      width: 32px;
+      background: $colorGold;
+    }
+  }
+
+}

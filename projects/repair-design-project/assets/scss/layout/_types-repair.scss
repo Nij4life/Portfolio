@@ -1,0 +1,141 @@
+.types-repair {
+  background: #ffffff;
+
+  & .section-header {
+    color: #000000;
+
+    @media screen and (max-width: 1000px){
+      margin-top: 100px;
+    }
+  }
+
+  & .section-header-img {
+   position: absolute;
+   left: 49%;
+  }
+
+  & .card-list {
+    margin-top: 80px;
+
+    @media screen and (max-width: 1252px){
+      margin-left: 10px;
+      margin-right: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item {
+      @media screen and (max-width: 1252px){
+       margin-left: 0;
+       margin-right: 0;
+      }
+    }
+
+    &__item:nth-child(3) {
+      @media screen and (max-width: 1252px){
+        margin-top: 200px;
+      }
+    }
+
+    &__item:nth-child(2) {
+      @media screen and (max-width: 880px){
+        margin-top: 200px;
+      }
+    }
+  }
+
+  &__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 200px 0;
+    background: url('./assets/images/house.jpg') no-repeat;
+
+    @media screen and (max-width: 1200px){
+      display: none;
+    }
+  }
+
+  & .types-repair__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 90px;
+    background: #131313;
+
+    & .form__title {
+      margin: 30px auto;
+      font-family: "FuturaDemiC", $supportFont;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      color: #ffffff;
+      align-self: center;
+    }
+
+    & .form__input {
+      width: 408px;
+      margin: 40px 49px;
+      background: #131313;
+      color: #ffffff;
+
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+
+    & label:not(:last-of-type) {
+      &::before {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        content: "Name";
+        width: 50px;
+        height: 50px;
+
+        font-family: "FuturaBookC", $supportFont;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    & .checkbox__label {
+      align-self: flex-start;
+      left: 0px;
+      margin: 0 0 40px 50px;
+      color: #ffffff;
+    }
+
+    & .form__button {
+      padding: 15px 20px;
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+      margin: 0 49px 27px 0;
+    }
+  }
+
+  .icon-pig {
+    display: flex;
+    margin: 40px 140px 0 0;
+
+    &__img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 72px;
+      height: 72px;
+      margin-right: 25px;
+      background: $colorGold;
+      border-radius: 50%;
+    }
+
+    &__text {
+      font-family: "FuturaDemiC", $supportFont;
+      font-size: 20px;
+      line-height: 25px;
+      color: $colorGold;
+      text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    }
+  }
+}
+
+

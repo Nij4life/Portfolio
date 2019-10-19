@@ -1,0 +1,37 @@
+.call {
+  &__link {
+    margin-right: 45px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: $colorGold;
+
+    &:hover {
+      border-bottom: 2px solid $colorGold;
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.5);
+      color: #f0da7a;
+    }
+
+    @media screen and (max-width: 1380px){
+      margin-right: 10px;
+    }
+  }
+
+  &__button {
+    padding: 13px 33px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  header &__button {
+    margin-right: 18px;
+
+    @media screen and (max-width: 1380px){
+      padding: 10px 10px;
+      margin-right: 5px;
+    }
+
+    @media screen and (max-width: 600px){
+      display: none;
+    }
+  }
+}

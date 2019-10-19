@@ -1,0 +1,33 @@
+.wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  background: #131313;
+  overflow: hidden;
+
+    &__header {
+      max-width: 1276px;
+      margin: auto;
+    }
+
+      &__h1 {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        visibility: hidden;
+      }
+
+    &__footer {
+      max-width: 1256px;
+      min-height: 133px;
+      margin: auto;
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+
+    & main {
+      background: $colorWhite;
+    }
+}

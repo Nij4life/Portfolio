@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>repair-design-project</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="wrapper__header">
+      <h1 class="wrapper__h1">repair-design-project</h1>
+      <div class="header">
+        <a class="header__logo" href="index.html">IC-"Repair-Design-Project"</a>
+        <nav>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link_selected" href="index.html">home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">projects</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">measurement </a></li>
+            <li class="menu__item"><a class="menu__link" href="#">team</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">reviews</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">contacts</a></li>
+          </ul>
+        </nav>
+        <div class="call">
+          <a class="call__link" href="tel:+79287683239">+7(928)768-32-39</a>
+          <button class="button call__button">Request a call</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="banner">
+        <div class="instagram"><p class="instagram__inner"><a class="instagram__link" href="http://" target="_blank" rel="noopener noreferrer">Instagram</a></p></div>
+        <div class="info banner__info">
+          <h2 class="info__header">TURNKEY REPEIR IN THE <br>
+             CiTY OF <span class="info__city">Rostov-on-don</span>
+            </h2>
+          <p class="info__text">Get ready-made turnkey repairs on time<br>
+              with work time saving up to 45 days and 20% from<br>
+              cost of materials due to the organization of work
+          </p>
+          <button class="button info__button">Calculate the cost</button>
+          <button class="button info__button">Submit your Application</button>
+        </div>
+        <button class="button button__scroll-down">
+          <span class="button__text"></s>scroll down <span class="button__arrow">&or;</span></p>
+        </button>
+      </section>
+
+      <section class="completed-projects">
+        <div class="completed-projects__description">
+            <div class="description">
+              <h2 class="description__header">Completed <br> projects</h2>
+              <p class="description__text">Only a small part of the work performed by our company is <wbr>
+                presented on the site. For 14 years on in the construction <wbr>
+                market we have made happy more than 1000 families
+              </p>
+              <div class="mobille-slider">
+                <img src="./assets/images/slider2-2.jpg" alt="slider mobile">
+              </div>
+              <div class="info description__info">
+                <div class="info__item">
+                  <h3 class="info__h3">City:</h3>
+                  <p>Rostov-on-Don<br>
+                      LCD admiral</p>
+                </div>
+                <div class="info__item">
+                  <h3 class="info__h3">apartment area:</h3>
+                  <p>81 m2</p>
+                </div>
+                <div class="info__item">
+                  <h3 class="info__h3">Repair time:</h3>
+                  <p>3.5 months</p>
+                </div>
+                <div class="info__item">
+                  <h3 class="info__h3">Repair Cost:</h3>
+                  <p>Upon request</p>
+                </div>
+              </div>
+              <div class="controls">
+                <button class="controls__button"> &#8592; </button>
+                <ul class="controls__nav">
+                    <li class="controls__item controls__item_active"><span ></span></li>
+                    <li class="controls__item"><span></span></li>
+                    <li class="controls__item"><span></span></li>
+                </ul>
+                <button class="controls__button"> &#8594; </button>
+              </div>
+            </div>
+        </div>
+        <div class="completed-projects__visual">
+          <ul class="navbar">
+            <li class="navbar__item"><a class="navbar__link_active" href="/">Rostov-on-Don, Admiral</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="/">Sochi Thieves</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="/">Rostov-on-Don Patriotic</a></li>
+          </ul>
+          <div class="slider">
+            <div class="slider__item"><a class="slider__link" href="http://"><img class="slider__img" src="./assets/images/slider2-1.jpg" alt="flat 1" width="679" height="482"></a></div>
+            <div class="slider__item_last"><a class="slider__link" href="http://"><img class="slider__img_last" src="./assets/images/slider2-2.jpg" alt="flat 2" width="679" height="482"></a></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="online-control">
+        <div class="online-control__top">
+          <h3 class="section-header">online control</h3>
+          <span class="section-header-img"><img src="./assets/images/icon_camera.png" alt=""></span>
+          <iframe class="online-control__video" width="817" height="434" src="https://www.youtube.com/embed/-ylq9w9EFSQ" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+        <p class="online-control__text">At each facility, a camera is installed that broadcasts the progress of work on the clock.<wbr>
+          At any time, you can go to our website and monitor the progress of work in your<wbr>
+          apartment. You can watch the live broadcast from one of our facilities!<wbr>
+          Leave a request below and you will receive a link to the broadcast.
+        </p>
+        <form class="form online-control__form" action="">
+          <label class="form__label">
+            <input class="form__input" type="text" name="name" placeholder="What is your name:" pattern="^[A-Za-zа-яА-Я]{2, 20}\b" required>
+          </label>
+          <label class="form__label">
+           <input class="form__input" type="tel" name="phone" placeholder="Your phone number:" pattern="^\+375\d{9}\b" required>
+          </label>
+          <button class="button form__button" type="submit">SUBMIT</button>
+          <input class="checkbox" type="checkbox" id="online-control-checkbox" required>
+          <label class="checkbox__label" for="online-control-checkbox"></label>
+        </form>
+      </section>
+
+      <section class="types-repair">
+        <h3 class="section-header">TYPES OF REPAIR</h3>
+        <span class="section-header-img"><img src="./assets/images/icon_build.png" alt=""></span>
+        <ul class="card-list">
+          <li class="item card-list__item">
+            <img src="./assets/images/flat1.jpg" alt="fla1">
+            <ul class="item__description">
+              <lh class="item__description-header">Redecorating</lh>
+              <li>Dismantling of old coatings</li>
+              <li>Wallpapering</li>
+              <li>Painting walls and ceilings</li>
+              <li>Laying flooring</li>
+              <li>Replacing plumbing</li>
+              <li>Replacing sockets and switches</li>
+              <li>Replacing doors</li>
+            </ul>
+            <button class="button item__button">from 900 rub / m2</button>
+          </li>
+          <li class="item card-list__item">
+            <img src="./assets/images/flat2.jpg" alt="fla2">
+            <ul class="item__description">
+              <lh class="item__description-header">Overhaul</lh>
+              <li>Dismantling of old coatings</li>
+              <li>Wallpapering</li>
+              <li>Painting walls and ceilings</li>
+              <li>Laying flooring</li>
+              <li>Replacing plumbing</li>
+              <li>Replacing sockets and switches</li>
+              <li>Replacing doors</li>
+            </ul>
+            <button class="button item__button">from 1800 rub / m2</button>
+          </li>
+          <li class="item card-list__item">
+            <img src="./assets/images/flat3.jpg" alt="fla3">
+            <ul class="item__description">
+              <lh class="item__description-header">Designer Repair</lh>
+              <li>Dismantling of old coatings</li>
+              <li>Wallpapering</li>
+              <li>Painting walls and ceilings</li>
+              <li>Laying flooring</li>
+              <li>Replacing plumbing</li>
+              <li>Replacing sockets and switches</li>
+              <li>Replacing doors</li>
+            </ul>
+            <button class="button item__button">from 4000 rub / m2</button>
+          </li>
+        </ul>
+        <div class="types-repair__form-wrapper">
+          <form class="form types-repair__form" action="">
+            <h3 class="form__title">Leave a request for free<br>departure of the measurer</h3>
+            <label  class="form__label">
+              <input class="form__input" type="text" name="name" placeholder="What is your name:" pattern="^[A-Za-zа-яА-Я]{2, 20}" required>
+            </label>
+            <label  class="form__label">
+              <input class="form__input" type="tel" name="tel" placeholder="Your phone number:" pattern="^\+375\d{9}\b" required>
+            </label>
+            <label  class="form__label">
+              <input class="form__input" type="email" name="email" placeholder="Your email:" pattern="^\w+@[a-zA-Z]+\.[a-zA-Z]{2}" required>
+            </label>
+            <input class="checkbox" type="checkbox" name="checkbox" id="types-repair-checkbox" required>
+            <label class="checkbox__label" for="types-repair-checkbox"></label>
+            <button class="button form__button" type="submit">Call the measurer</button>
+          </form>
+          <div class="icon-pig">
+            <span class="icon-pig__img"><img src="./assets/images/icon_pig.png" alt="icon_pig"></span>
+            <p class="icon-pig__text">Help save 10 - 20% of the<br>
+              cost of materials
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="we-realize">
+        <div class="we-realize__left">
+          <h2>We realize your<div>
+            wildest fantasies
+          </h2>
+          <ul class="we-realize-list">
+            <li class="we-realize-list__item_active"><a href="http://">American classic</a></li>
+            <li class="we-realize-list__item"><a href="http://">Empire</a></li>
+            <li class="we-realize-list__item"><a href="http://">Classical</a></li>
+            <li class="we-realize-list__item"><a href="http://">Loft</a></li>
+            <li class="we-realize-list__item"><a href="http://">Minimalism</a></li>
+            <li class="we-realize-list__item"><a href="http://">Provence</a></li>
+            <li class="we-realize-list__item"><a href="http://">Romanticism</a></li>
+            <li class="we-realize-list__item"><a href="http://">Scandinavian style</a></li>
+            <li class="we-realize-list__item"><a href="http://">Mediterranean style</a></li>
+            <li class="we-realize-list__item"><a href="http://">Mediterranean style</a></li>
+            <li class="we-realize-list__item"><a href="http://">Eclecticism</a></li>
+          </ul>
+        </div>
+        <div class="we-realize__right">
+          <div class="we-realize__img"><img src="./assets/images/flat4.jpg" alt="flat4"></div>
+          <div class="we-realize__img"><img src="./assets/images/flat6.jpg" alt="flat6" ></div>
+          <div class="we-realize__img"><img src="./assets/images/flat5.jpg" alt="flat5"></div>
+          <div class="we-realize__img"><img src="./assets/images/flat7.jpg" alt="flat7" ></div>
+        </div>
+        <div class="we-realize__slider">
+            <div class="we-realize__img"><img src="./assets/images/mobile_slider.jpg" alt="mobile"></div>
+        </div>
+      </section>
+
+      <section class="design-project">
+        <h3 class="section-header">design-project</h3>
+        <span class="section-header-img"><img src="./assets/images/icon_draw.png" alt="icon draw"></span>
+        <p class="design-project__text">Design project not only helps to make the repair of your apartment more modern,<wbr>
+          but also significantly reduces the cost of materials and reduces the time of repair work.
+        </p>
+        <ul class="card-list">
+          <li class="item card-list__item">
+            <img src="./assets/images/flat1.jpg" alt="fla1">
+            <ul class="item__description">
+              <lh class="item__description-header">Mini</lh>
+              <li>Measurement drawing</li>
+              <li>Redevelopment</li>
+              <li>Layout of furniture</li>
+              <li>Plumbing plan. equipment</li>
+            </ul>
+            <button class="button item__button">150 rub / m2</button>
+          </li>
+          <li class="item card-list__item">
+            <img src="./assets/images/flat2.jpg" alt="fla2">
+            <ul class="item__description">
+              <lh class="item__description-header">Standard</lh>
+              <li>Measurement drawing</li>
+              <li>Redevelopment</li>
+              <li>Layout of furniture</li>
+              <li>Plan of ceilings</li>
+              <li>Floor Plan</li>
+              <li>Electricians plan</li>
+              <li>Lighting plan</li>
+            </ul>
+            <button class="button item__button">400 rub / m2</button>
+          </li>
+          <li class="item card-list__item">
+            <img src="./assets/images/flat3.jpg" alt="fla3">
+            <ul class="item__description">
+              <lh class="item__description-header">Full</lh>
+              <li>Measurement drawing</li>
+              <li>Redevelopment</li>
+              <li>Layout of furniture</li>
+              <li>Plan of ceilings</li>
+              <li>Floor Plan</li>
+              <li>Electricians plan</li>
+              <li>Lighting plan</li>
+              <li>Wall reamers</li>
+              <li>3D visualization</li>
+              <li>Bill of materials</li>
+              <li>Departure for a selection of materials</li>
+              <li>Furniture selection</li>
+            </ul>
+            <button class="button item__button">400 rub / m2</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="six-steps">
+        <div class="six-steps__inner">
+          <div class="description">
+            <h2 class="six-steps__header">
+              6 steps to<br>
+              the goal
+            </h2>
+            <span class="description__page">1/6</span>
+            <h3 class="description__title">
+              Departure for<wbr>
+              measurements premises
+              </h3>
+              <p class="description__text">After your call, we go to you to consult and measure the<wbr>
+               premises of your apartment. During our meeting, you can<wbr>
+                 ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.
+              </p>
+              <p class="description__text">He will advise you on the issues of repair technology,<wbr>
+                 apartment design, terms of repair of the apartment as a<wbr> whole and its individual stages.
+              </p>
+            </p>
+            <div class="controls">
+              <button class="controls__button"> &#8592; </button>
+              <ul class="controls__nav">
+                <li class="controls__item controls__item_active"><span ></span></li>
+                <li class="controls__item"><span></span></li>
+                <li class="controls__item"><span></span></li>
+                <li class="controls__item"><span></span></li>
+                <li class="controls__item"><span></span></li>
+                <li class="controls__item"><span></span></li>
+              </ul>
+              <button class="controls__button"><p> &#8594;</p> </button>
+            </div>
+          </div>
+          <div class="six-steps__visual">
+            <ul class="navbar">
+              <li class="navbar__item_active">
+                <a class="navbar__link" href="/">01</a>
+                <span class="navbar__text">Departure to<br>room measurements</span>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="/">02</a>
+                <span class="navbar__text">Compilation<br>estimates</span>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="/">03</a>
+                <span class="navbar__text">Compilation<br>estimates</span>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="/">04</a>
+                <span class="navbar__text">Purchasing Supplies</span>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="/">05</a>
+                <span class="navbar__text">Repair finishing work</span>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="/">06</a>
+                <span class="navbar__text">Приемка-сдача работ</span>
+              </li>
+            </ul>
+            <div class="slider">
+              <div class="slider__item"><a class="slider__link" href="http://"><img class="slider__img"
+                src="./assets/images/slider3.jpg" alt="steps to the goal" width="805" height="421"></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-team">
+        <div class="our-team__top">
+          <h3 class="section-header">our-team</h3>
+          <span class="section-header-img"><img src="./assets/images/icon_team.png" alt="our-team"></span>
+          <p class="section-header__text">Our team has helped to become happier for more than<br>
+              500 families and we are not going to stop</p>
+          <ul class="list-photo">
+            <li class="list-photo__item">
+              <img class="list-photo__icon" src="./assets/images/icon_team1.png" alt="icon team 1">
+              <img src="./assets/images/photo1.jpg" alt="photo 1">
+              <div class="list-photo__info">
+                <h4>Dmitry tulyakov</h4>
+                <p>Project manager</p>
+                <button class="button list-photo__button">Work experience 8 years</button>
+              </div>
+            </li>
+            <li class="list-photo__item">
+                <img class="list-photo__icon" src="./assets/images/icon_team2.png" alt="icon team 2">
+              <img src="./assets/images/photo2.jpg" alt="photo 2">
+              <div class="list-photo__info">
+                <h4>Larisa Kotlyarova</h4>
+                <p>Designer</p>
+                <button class="button list-photo__button">Work experience 6 years</button>
+              </div>
+            </li>
+            <li class="list-photo__item">
+                <img class="list-photo__icon" src="./assets/images/icon_team3.png" alt="icon team 3">
+              <img src="./assets/images/photo3.jpg" alt="photo 3">
+              <div class="list-photo__info">
+                <h4>Alexey Efimov</h4>
+                <p>Foreman</p>
+                <button class="button list-photo__button">Work experience 12 years</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <p class="our-team__text">Each employee of our company is a qualified full-time specialist<wbr>
+            with work experience of 6 years.<br>
+            We do not have laborers and guest workers, each employee carries out<wbr> work corresponding to his specialty.
+        </p>
+      </section>
+
+      <section class="our-clients">
+          <h3 class="section-header">our clients</h3>
+          <span class="section-header-img"><img src="./assets/images/icon_draw.png" alt="icon draw"></span>
+          <p class="our-clients__text">
+            80% of our customers recommend us to their<br>
+            friends and family.
+          </p>
+          <ul class="list-clients">
+            <li class="item list-clients__item">
+              <article>
+                <h3>Fedosova Maria<br>Konstantinovna</h3>
+                <img class="item__photo" src="./assets/images/photo4.jpg" alt="photo clients 1">
+                <p class="item__text">I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that
+                   I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM
+                    AND APPROACH. THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND
+                     PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC.
+                      I RECOMMEND THESE MASTERS.</p>
+                <img class="item__info" src="./assets/images/clients1-info.png" alt="clients 1 info">
+              </article>
+            </li>
+            <li class="item list-clients__item">
+              <article>
+                <h3>Afanasyev Sergey<br>Alexandrovich</h3>
+                <img class="item__photo" src="./assets/images/photo5.jpg" alt="photo clients 1">
+                <p class="item__text">I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR.
+                  I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT
+                  TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH.
+                  THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL.
+                  WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND
+                  THESE MASTERS.</p>
+                <img class="item__info" src="./assets/images/clients2-info.png" alt="clients 2 info">
+              </article>
+            </li>
+            <li class="item list-clients__item">
+              <article>
+                <h3>Kiriev Egor<br>Leonidovich</h3>
+                <img class="item__photo" src="./assets/images/photo6.jpg" alt="photo clients 1">
+                <p class="item__text">I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR.
+                  I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT
+                  TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH. THE REPAIR PROCESS WAS TURNED OUT IN TERMS,
+                  FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS.
+                  QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.</p>
+                <img class="item__info" src="./assets/images/clients3-info.png" alt="clients 3 info">
+              </article>
+            </li>
+          </ul>
+      </section>
+
+      <section class="support">
+        <div class="support__top">
+            <form class="form support__form" action="">
+                <h3 class="form__title">have any questions?</h3>
+                <label  class="form__label">
+                  <input class="form__input" type="text" name="name" placeholder="What is your name:" pattern="^[A-Za-zа-яА-Я]{2, 20}" required>
+                </label>
+                <label  class="form__label">
+                  <input class="form__input" type="tel" name="tel" placeholder="Your phone number:" pattern="^\+375\d{9}\b" required>
+                </label>
+                <label  class="form__label">
+                  <input class="form__input" type="text" name="question" placeholder="I want to know:" required>
+                </label>
+                <input class="checkbox" type="checkbox" name="checkbox" id="support-checkbox" required>
+                <label class="checkbox__label" for="support-checkbox"></label>
+                <button class="button form__button" type="submit">Submit</button>
+              </form>
+        </div>
+        <p class="support__text">
+          Rostov-on-Don, Nansen St., 239 Shopping Center<br>Decorum Tel <a href="tel:+">+7 (928) 768 32 29</a>
+        </p>
+        <div class="support__contacts">
+         <a href="mailto:"><img src="./assets/images/icon_mail.png" alt="icon mail"></a>
+         <a href="http://"><img src="./assets/images/icon_instagram.png" alt="icon instagram"></a>
+        </div>
+        <div class="map">
+          <img src="./assets/images/map.jpg" alt="map">
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="wrapper__footer">
+        <div class="header">
+            <a class="header__logo" href="index.html">IC-"Repair-Design-Project"</a>
+            <nav>
+              <ul class="menu">
+                <li class="menu__item"><a class="menu__link_selected" href="index.html">home</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">projects</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">measurement </a></li>
+                <li class="menu__item"><a class="menu__link" href="#">team</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">reviews</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">contacts</a></li>
+              </ul>
+            </nav>
+            <div class="call">
+              <a class="call__link" href="tel:+79287683239">+7(928)768-32-39</a>
+              <button class="button call__button">Request a call</button>
+            </div>
+          </div>
+    </footer>
+  </div>
+  <script src="../../assets/js/support.js"></script>
+</body>
+</html>
