@@ -6,8 +6,7 @@ export default function Slider() {
     const showDescription = document.querySelectorAll('.description__show');
     showDescription.forEach( el => {
         el.addEventListener('click', (e) => {
-            // e.target.closest('.description').querySelector('.description__show').classList.toogle('visible')
-            console.log(e.target.closest('.description').querySelector('.description__text').classList.toggle('visible'));
+            e.target.closest('.description').querySelector('.description__text').classList.toggle('visible')
         });
     })
 
@@ -129,6 +128,12 @@ export default function Slider() {
 
             e.preventDefault();
         });
+
+
+        sweper.addEventListener('click', (e) => {
+            if(e.pageX !== startX)  e.preventDefault();
+         });
+
     }
 
     const el = document.querySelector('.carousel');
@@ -141,5 +146,7 @@ export default function Slider() {
     document.querySelector('.control.right').addEventListener('click', function () {
         if (isEnabled) nextItem(currentItem);
     });
+
+  
 
 }
