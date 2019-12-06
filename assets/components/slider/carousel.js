@@ -44,7 +44,7 @@ export default function Slider() {
     }
 
     const swipe = (el) => {
-        const sweper = el;
+        const swiper = el;
         let startX = 0;
         let startY = 0;
         let distX = 0;
@@ -56,14 +56,14 @@ export default function Slider() {
         let restraint = 100;
         let allowedTime = 700;
 
-        sweper.addEventListener('mousedown', (e) => {
+        swiper.addEventListener('mousedown', (e) => {
             startX = e.pageX;
             startY = e.pageY;
             startTime = new Date().getTime();
             e.preventDefault();
         }, false);
 
-        sweper.addEventListener('mouseup', (e) => {
+        swiper.addEventListener('mouseup', (e) => {
             distX = e.pageX - startX;
             distY = e.pageY - startY;
             elapsedTime = new Date().getTime() - startTime;
@@ -83,7 +83,7 @@ export default function Slider() {
             e.preventDefault();
         }, false);
 
-        sweper.addEventListener('touchstart', (e) => {
+        swiper.addEventListener('touchstart', (e) => {
             if (e.target.classList.contains('arrow') || e.target.classList.contains('control')) {
                 if (e.target.classList.contains('left')) {
                     if (isEnabled) {
@@ -104,9 +104,9 @@ export default function Slider() {
 
         }, false);
 
-        sweper.addEventListener('touchmove', e => e.preventDefault());
+        swiper.addEventListener('touchmove', e => e.preventDefault());
 
-        sweper.addEventListener('touchend', (e) => {
+        swiper.addEventListener('touchend', (e) => {
             const touch = e.changedTouches[0];
             distX = touch.pageX - startX;
             distY = touch.pageY - startY;
@@ -130,7 +130,7 @@ export default function Slider() {
         });
 
 
-        sweper.addEventListener('click', (e) => {
+        swiper.addEventListener('click', (e) => {
             if(e.pageX !== startX)  e.preventDefault();
          });
 
