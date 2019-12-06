@@ -100,7 +100,6 @@ export default function Slider() {
             startX = touch.pageX;
             startY = touch.pageY;
             startTime = new Date().getTime();
-            e.preventDefault();
 
         }, false);
 
@@ -125,8 +124,6 @@ export default function Slider() {
                     }
                 }
             }
-
-            e.preventDefault();
         });
 
 

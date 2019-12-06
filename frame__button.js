@@ -25,8 +25,7 @@ document.body.setAttribute('style', 'overflow-X: hidden; margin: 0;');
 // тут запутался !
 window.addEventListener('resize', () => {
     size.innerHTML = (iframe.offsetWidth <= 400) ? 'Desktop' : 'Mobile';
-    size.style.visibility = (window.innerWidth < 400) ? 'hidden' : 'visible ';
-    console.log(iframe.offsetWidth)
+    size.style.visibility = (window.innerWidth <= 400) ? 'hidden' : 'visible ';
 });
 
 
