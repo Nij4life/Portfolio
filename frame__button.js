@@ -22,11 +22,11 @@ document.body.appendChild(buttons);
 document.body.style.background = '#999999';
 document.body.setAttribute('style', 'overflow-X: hidden; margin: 0;');
 
-
+// тут запутался !
 window.addEventListener('resize', () => {
-    size.innerHTML = (iframe.offsetWidth < 400) ? 'Desktop' : 'Mobile';
+    size.innerHTML = (iframe.offsetWidth <= 400) ? 'Desktop' : 'Mobile';
     size.style.visibility = (window.innerWidth < 400) ? 'hidden' : 'visible ';
-    console.log(iframe.offsetWidth);
+    console.log(iframe.offsetWidth)
 });
 
 
